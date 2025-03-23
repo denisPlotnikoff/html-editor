@@ -1,0 +1,36 @@
+.uploadedFile {
+	$uploadedFile: &;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 400px;
+	min-width: 400px;
+	min-height: 250px;
+	padding: 40px 40px;
+	border: 1px dashed;
+	border-color: #dedede;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+	&__icon {
+		margin: 20px;
+		* {
+			transition: stroke 0.2s ease-out;
+		}
+	}
+	&__title {
+		color: #000;
+		font-size: 20px;
+		transition: color 0.2s ease-out;
+	}
+	&:hover {
+		border-color: #000;
+		#{$uploadedFile}__icon {
+			path {
+				stroke: #000;
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+.btn {
+	padding: 0;
+	cursor: pointer;
+	transition: all 0.2s ease-out;
+	svg {
+		transition: all 0.2s ease-out;
+	}
+	&--icon {
+		width: 40px;
+		height: 40px;
+		background: #fff;
+		&:hover {
+			background: #000;
+			svg {
+				fill: #fff;
+			}
+		}
+	}
+}
